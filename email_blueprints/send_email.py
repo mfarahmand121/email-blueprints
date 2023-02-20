@@ -213,7 +213,7 @@ def add_shipyard_link_to_message(message, shipyard_link):
     """
     Create a "signature" at the bottom of the email that links back to Shipyard.
     """
-    message = "This is a test, Sent by Mohsen from Heaven"
+    message = f'{message}<br><br>---<br>Sent by Mohsen from Heaven on Earth | <a href={shipyard_link}>Click Here</a> to see the best DSP in the world (where Canada is heaven on earth)'
     return message
 
 
@@ -306,7 +306,7 @@ def main():
             source_file_name_match_type):
 
         if include_shipyard_footer:
-            shipyard_link = shipyard.args.create_shipyard_link()
+            shipyard_link = 'basis.net'
             message = add_shipyard_link_to_message(
                 message=message, shipyard_link=shipyard_link)
 
