@@ -213,7 +213,7 @@ def add_shipyard_link_to_message(message, shipyard_link):
     """
     Create a "signature" at the bottom of the email that links back to Shipyard.
     """
-    message = f'{message}<br><br>---<br>Sent by <a href=https://www.shipyardapp.com> Shipyard</a> | <a href={shipyard_link}>Click Here</a> to Edit'
+    message = "This is a test, Sent by Mohsen from Heaven"
     return message
 
 
